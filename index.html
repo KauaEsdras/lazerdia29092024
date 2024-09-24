@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Concept Logo - Green.png" type="image/png" sizes="18x18">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Inscrição para o Evento</title>
+</head>
+<body>
+    <div class="container">
+        <div id="logo">
+            <img src="./Concept Logo - Green.png" id="logosix" alt="logosixeight">
+        </div>
+        <h2>Inscrição para o Evento</h2>
+        <form action="https://api.sheetmonkey.io/form/uoFDpK3cLENDPTPu94dixh" method="post" id="registrationForm">
+            <div class="form-group">
+                <label for="name">Nome completo ou Nickname:</label>
+                <input type="text" name="name" id="name" placeholder="Ex: Seu Nome/Nick" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Ex: seuemail@dominio.com" required>
+            </div>
+            <div class="form-group">
+                <label for="whatsapp">Número de WhatsApp:</label>
+                <input type="tel" name="whatsapp" id="whatsapp" placeholder="Ex: 68999999999" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Idade:</label>
+                <input type="number" name="idade" id="age" min="0" required>
+            </div>
+            <div id="guardianInfo" class="hidden">
+                <div class="form-group">
+                    <label for="guardianName">Nome do responsável:</label>
+                    <input type="text" name="nameres" id="guardianName" placeholder="Nome do responsável">
+                </div>
+                <div class="form-group">
+                    <label for="guardianPhone">Telefone do responsável:</label>
+                    <input type="tel" name="whatsappres" id="guardianPhone" placeholder="Ex: 68999999999">
+                </div>
+                <div>
+                    <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+                </div>
+            </div>
+            <div id="enviar">
+                <button type="submit" value="Sign Up">Enviar Inscrição</button>
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
